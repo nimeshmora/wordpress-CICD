@@ -1,7 +1,7 @@
 # Building WordPress using Azure DevOps and deploying to Azure App service
 Read my two articles about building custom WordPress solution and deploying it to Azure App Service at Azure Blogs <br> 
-<a href='https://dwops/blog/deploy-wordpress-using-azure-devops-ci-cd-pipeline-part-1/'>Part 1</a><br>
-<a href='https://dwops/blog/deploy-wordpress-using-azure-devops-ci-cd-pipeline-part-2/'>Part 2</a><br>
+<a href='https://dwops.com/blog/deploy-wordpress-using-azure-devops-ci-cd-pipeline-part-1/'>Part 1</a><br>
+<a href='https://dwops.com/blog/deploy-wordpress-using-azure-devops-ci-cd-pipeline-part-2/'>Part 2</a><br>
 <br>
 
 ## CI-CD Flow
