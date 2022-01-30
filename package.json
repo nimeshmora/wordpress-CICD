@@ -1,0 +1,23 @@
+{
+"devDependencies": {
+  "browser-sync": "^2.16.0",
+  "concurrently": "^2.2.0",
+  "eslint": "^3.2.2",
+  "eslint-config-thinkbrownstone": "^1.1.1",
+  "eslint-loader": "^1.5.0",
+  "less": "^2.7.1",
+  "nodemon": "^1.10.2",
+  "webpack": "^1.13.1"
+},
+
+"scripts": {
+  "build": "concurrently --raw 'npm run build:css' 'npm run build:js'",
+  "build:css": "lessc -x site/theme/less/main.less site/theme/assets/css/bundle.css",
+  "build:js": "webpack --config build/webpack.prod.config.js",
+  "dev": "concurrently --raw 'npm run watch:css' 'npm run watch:js' 'npm run watch'",
+  "lint": "eslint site/theme/js",
+  "watch": "node ./build/browser-sync.js",
+  "watch:css": "nodemon -q -e less -x lessc --source-map-map-inline site/theme/less/main.less site/theme/assets/css/bundle.css",
+  "watch:js": "webpack --config build/webpack.dev.config.js"
+},
+}
